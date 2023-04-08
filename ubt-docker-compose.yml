@@ -1,0 +1,17 @@
+  version: "3"
+
+  services:
+    ROS-Desktop:
+      image: raymondturrisi/ros-full-desktop:v0
+      build: .
+      container_name: ROS_Desktop_Server
+      command: /home/friyay/.entry_point
+      environment:
+        #  - user="1000:1000"
+        - DISPLAY=unix${DISPLAY}
+      volumes:
+        - ~/2.12-ros:/home/friyay/2.12-ros
+        - /tmp/.X11-unix:/tmp/.X11-unix
+      network_mode: host
+      stdin_open: true
+      tty: true

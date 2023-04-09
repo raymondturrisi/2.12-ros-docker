@@ -1,0 +1,1 @@
+xhost ${get_ip_wifi}

@@ -1,0 +1,2 @@
+#!/bin/bash
+ifconfig en0 | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | sed -E 's/inet (addr:)?| //g'

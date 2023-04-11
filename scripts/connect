@@ -1,2 +1,2 @@
 
-docker exec -it -u friyay ROS_Desktop_Server /bin/zsh
+sudo docker exec -it -u friyay ROS_Desktop_Server /bin/zsh

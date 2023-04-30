@@ -6,7 +6,6 @@ FROM raymondturrisi/ros-full-desktop:v0.1
 RUN apt-get update && apt-get install -y --no-install-recommends \
     ros-noetic-desktop-full=1.5.0-1* \
     && rm -rf /var/lib/apt/lists/* \
-    && apt install ros-noetic-moveit -y \
     && ln -s /usr/bin/python3 /usr/bin/python 
 
 USER friyay
